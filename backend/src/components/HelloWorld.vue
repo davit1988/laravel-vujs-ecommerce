@@ -1,4 +1,10 @@
 <script setup>
+
+import { computed } from 'vue'
+import store from '@/store';
+
+const test = computed(() => store.state.test);
+
 defineProps({
   msg: {
     type: String,
@@ -9,7 +15,7 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="bg-purple-500">{{ msg }}666</h1>
+    <h1 class="bg-purple-500">{{ msg }}{{ test }}</h1>
     <h3>
       You’ve successfully created a project with
       <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +

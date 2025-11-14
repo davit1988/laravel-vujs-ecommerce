@@ -1,15 +1,13 @@
 <template lang="">
-  <div>
-    <router-view></router-view>
-  </div>
+    <div>
+        dashboard page
+    </div>
 </template>
-
 <script>
 export default {
-  
+    
 }
 </script>
-
 <style lang="">
-  
+    
 </style>
